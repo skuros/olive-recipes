@@ -1,0 +1,8 @@
+# This file will be installed together with AITK runtime requirements
+# For the full requirements, see AITK
+torch>=2.3.0
+datasets==2.17.0
+pyarrow>=14.0.0
+transformers==4.56.0
+huggingface-hub==0.36.0
+torchmetrics<1.4.0
