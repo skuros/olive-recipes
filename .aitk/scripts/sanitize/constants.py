@@ -21,6 +21,7 @@ class IconEnum(Enum):
     qwen = "qwen"
     mistralai = "mistralai"
     HuggingFace = "HuggingFace"
+    onnx = "onnx"
 
 
 class ArchitectureEnum(Enum):
@@ -32,7 +33,6 @@ class ArchitectureEnum(Enum):
 
 class ModelStatusEnum(Enum):
     Ready = "Ready"
-    Coming = "Coming"
     Hide = "Hide"
 
 
@@ -68,6 +68,7 @@ class ParameterTagEnum(Enum):
     EvaluationDatasetSubset = "EvaluationDatasetSubset"
     EvaluationDatasetSplit = "EvaluationDatasetSplit"
     DependsOnDataset = "DependsOnDataset"
+    # TODO clean up unused tags
     ActivationType = "ActivationType"
     WeightType = "WeightType"
 
@@ -106,6 +107,9 @@ class OliveDeviceTypes(Enum):
 # Pass name is case insensitive, so we use lower case for all pass names
 # Should sort by value
 class OlivePassNames:
+    AitkPython = "aitkpython"
+    GptqModel = "gptqmodel"
+    GptqQuantizer = "gptqquantizer"
     ModelBuilder = "modelbuilder"
     NVModelOptQuantization = "nvmodeloptquantization"
     OnnxFloatToFloat16 = "onnxfloattofloat16"
@@ -131,6 +135,7 @@ class OlivePropertyNames:
     DataConfigs = "data_configs"
     DataName = "data_name"
     Dataset = "dataset"
+    DataType = "data_type"
     Device = "device"
     Engine = "engine"
     EvaluateInputModel = "evaluate_input_model"
@@ -138,13 +143,16 @@ class OlivePropertyNames:
     Evaluators = "evaluators"
     ExecutionProviders = "execution_providers"
     ExtraArgs = "extra_args"
+    Float16 = "float16"
     Host = "host"
     LoadDatasetConfig = "load_dataset_config"
     MaxSamples = "max_samples"
+    MaxSeqLen = "max_seq_len"
     Metrics = "metrics"
     Name = "name"
     NumCalibData = "num_calib_data"
     OutputDir = "output_dir"
+    OvQuantConfig = "ov_quant_config"
     Passes = "passes"
     Precision = "precision"
     PreProcessDataConfig = "pre_process_data_config"
@@ -157,6 +165,8 @@ class OlivePropertyNames:
     TargetDevice = "target_device"
     Type = "type"
     UserConfig = "user_config"
+    UserScript = "user_script"
+    WeightFormat = "weight_format"
 
 
 # Path constants

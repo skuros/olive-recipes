@@ -15,14 +15,12 @@ uvpipInstallPrefix = "# uvpip:install"
 cudaExtraUrl = "--extra-index-url https://download.pytorch.org/whl/cu128"
 torchCudaVersion = "torch==2.7.0+cu128"
 # TODO unused. need update later
-onnxruntimeWinmlVersion = f"{uvpipInstallPrefix} onnxruntime-winml==1.23.2.202510220036 --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/ORT-Nightly/pypi/simple --no-deps;post"
-onnxruntimeGenaiWinmlVersion = f"{uvpipInstallPrefix} onnxruntime-genai-winml==0.10.0 --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/ORT-Nightly/pypi/simple --no-deps;post"
+onnxruntimeWinmlVersion = "onnxruntime-windowsml==1.23.2.202512041916"
+onnxruntimeGenaiWinmlVersion = "onnxruntime-genai-winml==0.11.2"
 evaluateVersion = "evaluate==0.4.3"
 scikitLearnVersion = "scikit-learn==1.6.1"
 optimumVersion = "optimum==1.26.1"
 winrtPackage = [
-    "--index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/ORT-Nightly/pypi/simple",
-    "--extra-index-url https://pypi.org/simple",
     "winrt-runtime==3.2.1",
     "winrt-Windows.Foundation==3.2.1",
     "winrt-Windows.Foundation.Collections==3.2.1",
@@ -33,7 +31,6 @@ winrtPackage = [
 # if from git: "git+https://github.com/microsoft/Olive.git@COMMIT_ID#egg=olive_ai
 oliveAi = "olive-ai==0.10.1"
 torchVision = "torchvision==0.22.0"
-# TODO it is an example
 amdQuark = "AMD__Quark_py3.10.17"
 
 
@@ -285,4 +282,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    raise RuntimeError("deprecated, need revise")

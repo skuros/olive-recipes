@@ -1,11 +1,11 @@
-aiohttp==3.12.14
+aiohttp==3.13.3
 coloredlogs==15.0.1
 comm==0.2.2
 # datasets==3.5.0
 datasets==3.5.0
 debugpy==1.8.13
 dill==0.3.8
-filelock==3.18.0
+filelock==3.20.3
 flatbuffers==25.2.10
 fsspec==2024.12.0
 huggingface-hub[hf_xet]==0.34.4
@@ -47,8 +47,8 @@ optimum[openvino]==1.24.0
 optuna==4.2.1
 packaging==24.2
 pandas==2.2.3
-pillow==11.3.0
-protobuf==6.31.1
+pillow==12.1.1
+protobuf==5.29.6
 psutil==7.0.0
 pyarrow==19.0.1
 pydantic==2.11.1
@@ -70,7 +70,7 @@ torch==2.6.0
 torchmetrics==1.7.0
 # torchvision==0.21.0
 torchvision==0.21.0
-tornado==6.5
+tornado==6.5.5
 tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.48.0

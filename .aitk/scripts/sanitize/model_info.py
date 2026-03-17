@@ -21,7 +21,7 @@ from .utils import GlobalVars, open_ex, printError, printProcess
 
 class ModelInfo(BaseModel):
     displayName: str
-    discription: Optional[str] = None
+    description: Optional[str] = None
     icon: IconEnum
     modelLink: str
     id: str
@@ -76,6 +76,7 @@ class ModelList(BaseModelClass):
     DatasetSubset: Dict[str, List[str]]
     DisplayNameToRuntimeRPC: Dict[str, RuntimeEnum] = {}
     RuntimeToDisplayName: Dict[RuntimeEnum, str] = {}
+    OptimizationToDisplayName: Dict[str, Dict[str, str]]
 
     @staticmethod
     def Read(scriptFolder: str):
